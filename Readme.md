@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Роман Смирнов](https://up.htmlacademy.ru/htmlcss/26/user/23198).
-* Наставник: `Неизвестно`.
+* Наставник: [Данил Чушко](https://htmlacademy.ru/profile/flatdesign).
 
 ---
 
