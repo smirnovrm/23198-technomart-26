@@ -87,26 +87,59 @@
         </ul>
       </div>
       <aside>
-        <p>Фильтр:</p>
-        <div>
-          <h3>Цена:</h3>
-          <span>Ползунок</span>
-          <span>0</span> - <span>30000</span>
-        </div>
-        <div>
-          <h3>Производители:</h3>
-          <span>Bosch</span>
-          <span>Интерсколл</span>
-          <span>Makita</span>
-          <span>Dewalt</span>
-          <span>Hitachi</span>
-        </div>
-        <div>
-          <h3>Питание:</h3>
-          <span>Аккумляторные</span>
-          <span>Сетевые</span>
-        </div>
-        <button type="submit">Показать</button>
+        <form action="">
+          <p>Фильтр:</p>
+          <div>
+            <h3>Цена:</h3>
+            <span>Ползунок</span>
+            <span>0</span> - <span>30000</span>
+          </div>
+          <div>
+            <h3>Производители:</h3>
+            <fieldset>
+              <legend>Производители</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="bosch" id="bosch" checked>
+                  <label for="bosch">Bosch</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="interskoll" id="interskoll">
+                  <label for="interskoll">Интерсколл</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="makita" id="makita" checked>
+                  <label for="makita">Makita</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="dewalt" id="dewalt">
+                  <label for="dewalt">Dewalt</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="hitachi" id="hitachi">
+                  <label for="hitachi">Hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div>
+            <h3>Питание:</h3>
+            <fieldset>
+              <legend>Питание</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="accum" id="accum">
+                  <label for="accum">Аккумуляторные</label>
+                </li>
+                <li>
+                  <input type="radio" name="accum" id="network">
+                  <label for="network">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <button type="submit">Показать</button>
+      </form>
     </aside>
       <div>
         <ul>
