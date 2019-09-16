@@ -284,6 +284,22 @@
     <section>
       <h2>Карта проезда</h2>
       <img src="img/map.png" width="940" height="446" alt="Карта проезда до магазина">
+      <button type="button" aria-label="Закрыть карту проезда">Закрыть</button>
+    </section>
+    <section>
+      <h2>Контактная форма</h2>
+      <form action="" method="POST">
+        <div>
+          <label for="namePerson" aria-label="Ваше имя">Ваше имя:</label>
+          <input type="text" name="namePerson" id="namePerson" placeholder="Имя Фамилия" aria-placeholder="Имя Фамилия">
+          <label for="emailPerson" aria-label="Ваш e-mail">Ваш e-mail:</label>
+          <input type="email" name="emailPerson" id="emailPerson" placeholder="email@example.com" aria-placeholder="email@example.com">
+        </div>
+        <label for="mailText" aria-label="Текст письма">Текст письма:</label>
+        <textarea name="mailText" id="" cols="100" rows="20" aria-placeholder="Текст письма в свободной форме">В свободной форме</textarea>
+        <button type="submit" aria-label="Отправить">Отправить</button>
+      </form>
+      <button type="button" aria-label="Закрыть контактную форму">Закрыть</button>
     </section>
   </body>
 </html>
