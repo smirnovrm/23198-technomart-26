@@ -12,8 +12,8 @@
         </div>
         <div>
           <form action="" method="GET">
-            <label for="searchField">Поиск:</label>
-            <input type="search" name="searchField" id="searchField">
+            <label for="search-field" aria-label="Поиск">Поиск:</label>
+            <input type="search" name="search-field" aria-label="Форма поиска">
           </form>
         </div>
         <div>
@@ -62,59 +62,60 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <div>
           <h3>Материалы</h3>
-          <a href="">На любой вкус</a>
+          <a href="" title="Материалы на любой вкус" aria-label="Материалы на любой вкус">На любой вкус</a>
         </div>
         <div>
           <h3>Инструмент</h3>
-          <a href="">На все случаи</a>
+          <a href="" title="Инструмент на все случаи" aria-label="Инструмент на все случаи">На все случаи</a>
         </div>
         <div>
           <h3>Техника</h3>
-          <a href="">Для стройки</a>
+          <a href="" title="Техника для стройки" aria-label="Техника для стройки">Для стройки</a>
         </div>
         <section>
+          <h3 class="visually-hidden">Слайдер</h3>
           <div>
-            <h3>Дрели</h3>
+            <h4>Дрели</h4>
             <p>Соседям на радость!</p>
-            <a href="catalog.html">Открыть каталог</a>
+            <a href="catalog.html" title="Открыть каталог" aria-label="Открыть каталог">Открыть каталог</a>
           </div>
           <div>
-            <h3>Перфораторы</h3>
+            <h4>Перфораторы</h4>
             <p>Настоящие мужские игрушки</p>
-            <a href="catalog.html">Открыть каталог</a>
+            <a href="catalog.html" title="Открыть каталог" aria-label="Открыть каталог">Открыть каталог</a>
           </div>
-          <button>Вперед</button>
-          <button>Назад</button>
+          <button type="button" aria-label="Следующии слайд">Вперед</button>
+          <button type="button" aria-label="Предыдущий слайд">Назад</button>
         </section>
         <div>
           <div>
             <h3>Скидка 50%</h3>
-            <a href="">На 350 товаров</a>
+            <a href="" title="Скидка 50% на 350 товаров" aria-label="Скидка 50% на 350 товаров">На 350 товаров</a>
           </div>
           <div>
             <h3>Доставка</h3>
-            <a href="">Бесплатно</a>
+            <a href="" title="Доставка бесплатно" aria-label="Доставка бесплатно">Бесплатно</a>
           </div>
         </div>
       </section>
       <section>
         <div>
           <h2>Популярные товары</h2>
-          <a href="">Все популярные товары</a>
+          <a href="" title="Все популярные товары" aria-label="Все популярные товары">Все популярные товары</a>
         </div>
         <div>
           <ul>
             <li>
-              <a href="" title="Перфоратор BOSCH BFG 9000">
+              <a href="" title="Перфоратор BOSCH BFG 9000" aria-label="Перфоратор BOSCH BFG 9000">
                 <div>
                   <img src="img/item-image-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
                   <ul>
-                    <li><a href="" title="Купить">Купить</a></li>
-                    <li><a href="" title="В закладки">В закладки</a></li>
+                    <li><a href="" title="Купить" aria-label="Купить">Купить</a></li>
+                    <li><a href="" title="В закладки" aria-label="В закладки">В закладки</a></li>
                   </ul>
                   <h3>Перфоратор BOSCH BFG 9000</h3>
-                  <span>32500 Р.</span>
-                  <span>25500 Р.</span>
+                  <span aria-label="Старая цена: 32500 рублей">32500 Р.</span>
+                  <span aria-label="Новая цена: 25500 рублей">25500 Р.</span>
                 </div>
               </a>
             </li>
@@ -165,7 +166,7 @@
       <section>
         <div>
           <h2>Популярные производители:</h2>
-          <a href="">Все производители</a>
+          <a href="" title="Все производители">Все производители</a>
         </div>
         <div>
           <ul>
@@ -270,33 +271,33 @@
         <p>© 2010–2019 Компания «Техномарт»<br> Все права защищены</p>
         <div>
           <ul>
-            <li><a href="">Вконтакте</a></li>
-            <li><a href="">Фейсбук</a></li>
-            <li><a href="">Инстаграмм</a></li>
+            <li><a href="" title="Вконтакте">Вконтакте</a></li>
+            <li><a href="" title="Фейсбук">Фейсбук</a></li>
+            <li><a href="" title="Инстаграмм">Инстаграмм</a></li>
           </ul>
         </div>
         <div>
           <p>Обратная связь:<br><a href="mailto:mail@htmlacademy.ru" title="Обратная связь">mail@htmlacademy.ru</a></p>
-          <p>Разработано —<br><a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" title="HTML Academy">htmlacademy.ru</a></p>
+          <p>Разработано —<br><a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" title="Разработано в HTML Academy">htmlacademy.ru</a></p>
         </div>
       </section>
     </footer>
     <section>
-      <h2>Карта проезда</h2>
+      <h2 class="visually-hidden">Карта проезда</h2>
       <img src="img/map.png" width="940" height="446" alt="Карта проезда до магазина">
       <button type="button" aria-label="Закрыть карту проезда">Закрыть</button>
     </section>
     <section>
-      <h2>Контактная форма</h2>
+      <h2 class="visually-hidden">Контактная форма</h2>
       <form action="" method="POST">
         <div>
-          <label for="namePerson" aria-label="Ваше имя">Ваше имя:</label>
-          <input type="text" name="namePerson" id="namePerson" placeholder="Имя Фамилия" aria-placeholder="Имя Фамилия">
-          <label for="emailPerson" aria-label="Ваш e-mail">Ваш e-mail:</label>
-          <input type="email" name="emailPerson" id="emailPerson" placeholder="email@example.com" aria-placeholder="email@example.com">
+          <label for="name-person" aria-label="Ваше имя">Ваше имя:</label>
+          <input type="text" name="name-person" placeholder="Имя Фамилия" aria-placeholder="Имя Фамилия">
+          <label for="email-person" aria-label="Ваш e-mail">Ваш e-mail:</label>
+          <input type="email" name="email-person" placeholder="email@example.com" aria-placeholder="email@example.com">
         </div>
-        <label for="mailText" aria-label="Текст письма">Текст письма:</label>
-        <textarea name="mailText" id="" cols="100" rows="20" aria-placeholder="Текст письма в свободной форме">В свободной форме</textarea>
+        <label for="mail-text" aria-label="Текст письма">Текст письма:</label>
+        <textarea name="mail-text" id="" cols="100" rows="20" aria-placeholder="Текст письма в свободной форме">В свободной форме</textarea>
         <button type="submit" aria-label="Отправить">Отправить</button>
       </form>
       <button type="button" aria-label="Закрыть контактную форму">Закрыть</button>
