@@ -12,8 +12,8 @@
       </div>
       <div>
         <form action="" method="GET">
-          <label for="search-field" aria-label="Поиск">Поиск:</label>
-          <input type="search" name="search-field" aria-label="Форма поиска">
+          <label for="search-button" aria-label="Поиск"><button type="submit" id="search-button">Поиск</button></label>
+          <input type="search" name="search-field" id="search-field" aria-label="Форма поиска" placeholder="Поиск:">
         </form>
       </div>
       <div>
@@ -131,11 +131,11 @@
               <legend>Питание</legend>
               <ul>
                 <li>
-                  <input type="radio" name="power" id="accum">
+                  <input type="radio" name="power" id="accum" value="accum">
                   <label for="accum">Аккумуляторные</label>
                 </li>
                 <li>
-                  <input type="radio" name="power" id="network">
+                  <input type="radio" name="power" id="network" value="network">
                   <label for="network">Сетевые</label>
                 </li>
               </ul>

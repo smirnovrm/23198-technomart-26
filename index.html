@@ -12,8 +12,8 @@
         </div>
         <div>
           <form action="" method="GET">
-            <label for="search-field" aria-label="Поиск">Поиск:</label>
-            <input type="search" name="search-field" aria-label="Форма поиска">
+            <label for="search-button" aria-label="Поиск"><button type="submit" id="search-button">Поиск</button></label>
+            <input type="search" name="search-field" id="search-field" aria-label="Форма поиска" placeholder="Поиск:">
           </form>
         </div>
         <div>
@@ -292,12 +292,12 @@
       <form action="" method="POST">
         <div>
           <label for="name-person" aria-label="Ваше имя">Ваше имя:</label>
-          <input type="text" name="name-person" placeholder="Имя Фамилия" aria-placeholder="Имя Фамилия">
+          <input type="text" name="name-person" id="name-person" placeholder="Имя Фамилия" aria-placeholder="Имя Фамилия">
           <label for="email-person" aria-label="Ваш e-mail">Ваш e-mail:</label>
-          <input type="email" name="email-person" placeholder="email@example.com" aria-placeholder="email@example.com">
+          <input type="email" name="email-person" id="email-person" placeholder="email@example.com" aria-placeholder="email@example.com">
         </div>
         <label for="mail-text" aria-label="Текст письма">Текст письма:</label>
-        <textarea name="mail-text" id="" cols="100" rows="20" aria-placeholder="Текст письма в свободной форме">В свободной форме</textarea>
+        <textarea name="mail-text" id="mail-text" cols="100" rows="20" aria-placeholder="Текст письма в свободной форме">В свободной форме</textarea>
         <button type="submit" aria-label="Отправить">Отправить</button>
       </form>
       <button type="button" aria-label="Закрыть контактную форму">Закрыть</button>
