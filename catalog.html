@@ -94,8 +94,8 @@
           <p>Фильтр:</p>
           <div>
             <h3>Цена:</h3>
-            <span>Ползунок</span>
-            <span>0</span> - <span>30000</span>
+            <input type="range" name="price-range" id="price-range" min="0" max="35000" value="30000" aria-label="Ползунок выбора ценового диапазона">
+            <output>0</output>-<output>30000</output>
           </div>
           <div>
             <h3>Производители:</h3>
@@ -103,23 +103,23 @@
               <legend>Производители</legend>
               <ul>
                 <li>
-                  <input type="checkbox" name="bosch" id="bosch" checked>
+                  <input type="checkbox" name="bosch" id="bosch" aria-label="Bosch" checked>
                   <label for="bosch">Bosch</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="interskoll" id="interskoll">
+                  <input type="checkbox" name="interskoll" id="interskoll" aria-label="Интерсколл">
                   <label for="interskoll">Интерсколл</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="makita" id="makita" checked>
+                  <input type="checkbox" name="makita" id="makita" checked aria-label="Makita">
                   <label for="makita">Makita</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="dewalt" id="dewalt">
+                  <input type="checkbox" name="dewalt" id="dewalt" aria-label="Dewalt">
                   <label for="dewalt">Dewalt</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="hitachi" id="hitachi">
+                  <input type="checkbox" name="hitachi" id="hitachi" aria-label="Hitachi">
                   <label for="hitachi">Hitachi</label>
                 </li>
               </ul>
@@ -131,11 +131,11 @@
               <legend>Питание</legend>
               <ul>
                 <li>
-                  <input type="radio" name="power" id="accum" value="accumulation">
+                  <input type="radio" name="power" id="accum" value="accumulation" aria-label="Аккумуляторные">
                   <label for="accum">Аккумуляторные</label>
                 </li>
                 <li>
-                  <input type="radio" name="power" id="network" value="network">
+                  <input type="radio" name="power" id="network" value="network" aria-label="Сетевые">
                   <label for="network">Сетевые</label>
                 </li>
               </ul>
