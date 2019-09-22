@@ -100,10 +100,10 @@
             <input type="range" name="price-range" id="price-range" min="0" max="35000" value="30000" aria-label="Ползунок выбора ценового диапазона">
             <output>0</output>-<output>30000</output>
           </div>
-          <div>
+          <div class="developer">
             <h3>Производители:</h3>
             <fieldset>
-              <legend>Производители</legend>
+              <legend class="visually-hidden">Производители</legend>
               <ul>
                 <li>
                   <input type="checkbox" name="bosch" id="bosch" aria-label="Bosch" checked>
@@ -128,10 +128,10 @@
               </ul>
             </fieldset>
           </div>
-          <div>
+          <div class="power-type">
             <h3>Питание:</h3>
             <fieldset>
-              <legend>Питание</legend>
+              <legend class="visually-hidden">Питание</legend>
               <ul>
                 <li>
                   <input type="radio" name="power" id="accum" value="accumulation" aria-label="Аккумуляторные" checked>
@@ -144,7 +144,7 @@
               </ul>
             </fieldset>
           </div>
-          <button type="submit" aria-label="Показать результаты фильтрации">Показать</button>
+          <button class="btn btn-filter" type="submit" aria-label="Показать результаты фильтрации">Показать</button>
       </form>
     </aside>
       <div>
