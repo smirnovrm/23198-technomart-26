@@ -467,9 +467,49 @@ footer {
 
 }
 
+.breadcrumb-list {
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+}
+
+.breadcrumb-list a {
+
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 18px;
+  color: #000000;
+
+}
+
+.page-title {
+
+  padding-top: 32px;
+  padding-bottom: 34px;
+  padding-left: 30px;
+
+  font-family: "Cuprum", Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+
+  background-color: #f2f6f8;
+  color: #32425c;
+
+
+}
+
 .map-popup,
-.contact-popup {
+.contact-popup,
+.basket-popup {
 
   display: none;
 
 }
+
+
