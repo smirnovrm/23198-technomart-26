@@ -375,8 +375,33 @@ nav a:active {
 
 }
 
+.company-info-block {
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 80px;
+  padding-bottom: 85px;
+
+}
+
+.info-block {
+
+width: 540px;
+
+}
+
+.map-block {
+
+  width: 300px;
+
+}
+
 .info-block h2,
 .map-block h2 {
+
+  margin: 0;
+  margin-bottom: 37px;
 
   font-family: "Cuprum", Helvetica, sans-serif;
   text-transform: uppercase;
@@ -400,6 +425,8 @@ nav a:active {
 .map-block a {
 
   display: inline-block;
+
+  margin-top: 40px;
 
   padding-top: 14px;
   padding-bottom: 12px;
