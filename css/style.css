@@ -409,7 +409,6 @@ width: 540px;
   font-size: 30px;
   line-height: 30px;
 
-
 }
 
 .info-block li {
@@ -468,6 +467,14 @@ footer {
 
 }
 
+.footer-nav .wrapper {
+
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 45px;
+
+}
+
 .footer-logo a {
 
   padding-top: 20px;
@@ -481,6 +488,9 @@ footer {
 
 .footer-logo p {
 
+  margin: 0;
+  margin-top: 32px;
+
   font-family: "Cuprum", Helvetica, sans-serif;
   font-size: 18px;
   font-weight: normal;
@@ -491,10 +501,33 @@ footer {
 
 .footer-nav ul {
 
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+}
+
+.primary-menu,
+.additional-menu {
+
+  display: flex;
+  width: 550px;
+
+}
+
+.footer-nav ul.primary-menu {
+
+  margin-top: 42px;
+  margin-bottom: 32px;
+
+}
+
+.footer-nav ul.additional-menu {
+
+  padding-left: 25px;
 
 }
 
@@ -536,7 +569,21 @@ footer {
 
 }
 
-.footer-info > p {
+.footer-info .wrapper {
+
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 30px;
+
+}
+
+
+.copyright {
+
+  margin: 0;
+
+  width: 230px;
 
   font-family: "Cuprum", Helvetica, sans-serif;
   font-size: 16px;
@@ -548,8 +595,12 @@ footer {
 
 .social-link {
 
+  display: flex;
+
   margin: 0;
   padding: 0;
+
+  width: 150px;
 
   list-style: none;
 
@@ -557,11 +608,23 @@ footer {
 
 .extra-link {
 
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+
+  padding-right: 15px;
+
   font-family: "Cuprum", Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   color: #ffffff;
+
+}
+
+.extra-link p {
+
+  margin: 0;
 
 }
 
