@@ -648,10 +648,28 @@ footer {
 
 .breadcrumb-list {
 
+  display: flex;
+  justify-content: flex-start;
+
   margin: 0;
   padding: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
 
   list-style: none;
+
+}
+
+.breadcrumb-list li {
+
+  margin-right: 15px;
+  margin-left: 19px;
+
+}
+
+.breadcrumb-list li:nth-child(1) {
+
+  margin-left: 0;
 
 }
 
@@ -667,18 +685,39 @@ footer {
 
 .page-title {
 
-  padding-top: 32px;
-  padding-bottom: 34px;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 30px;
 
   font-family: "Cuprum", Helvetica, sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
+  text-transform: uppercase;
 
   background-color: #f2f6f8;
   color: #32425c;
 
+}
+
+.main-content {
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+
+.filter-block {
+
+  width: 220px;
+
+}
+
+.catalog {
+
+  width: 700px;
 
 }
 
@@ -697,6 +736,11 @@ footer {
 }
 
 .filter-block p {
+
+  display:flex;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   font-size: 13px;
   font-weight: 400;
@@ -745,7 +789,31 @@ footer {
 
 }
 
-.catalog-list {
+.sorting-block {
+
+display: flex;
+justify-content: space-between;
+margin: 0;
+padding-top: 10px;
+padding-bottom: 10px;
+
+line-height: 18px;
+
+background-color: #f7f3ec;
+
+}
+
+.sorting-block p {
+
+margin: 0;
+
+text-transform: uppercase;
+
+}
+
+.sorting-block ul {
+
+  display: flex;
 
   margin: 0;
   padding: 0;
@@ -754,9 +822,37 @@ footer {
 
 }
 
-.goods-card {
+.sorting-block a {
 
-  margin: 20px;
+  text-transform: uppercase;
+  color: #000000;
+
+}
+
+.catalog-list {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+
+  list-style: none;
+
+}
+
+.catalog-item {
+
+  display: flex;
+
+  width: 220px;
+  margin-bottom: 20px;
+
+}
+
+.goods-card {
 
   border: 1px solid #e5e5e5;
 
