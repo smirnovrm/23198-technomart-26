@@ -100,7 +100,7 @@ h1 {
 
 .page-header .extra {
 
-  align-content: flex-end;
+  display: flex;
 
 }
 
@@ -287,9 +287,21 @@ h1 {
 
 .login-block .profile-btn {
 
-  padding-right: 69px;
+  padding-right: 55px;
   padding-bottom: 11px;
-  padding-left: 47px;
+  padding-left: 46px;
+
+}
+
+ul.additional {
+
+  justify-content: flex-start;
+
+}
+
+.additional li:nth-child(1) {
+
+  margin-right: 30px;
 
 }
 
