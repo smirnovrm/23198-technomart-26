@@ -193,7 +193,12 @@ h1 {
 
 }
 
-.contact-block,
+.contact-block {
+
+  width: 270px;
+
+}
+
 .login-block {
 
   width: 300px;
