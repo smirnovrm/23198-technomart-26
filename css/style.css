@@ -583,7 +583,102 @@ main {
 
 }
 
-.title-popular
+.title-popular,
+.title-brand {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 25px;
+  padding-right: 24px;
+  padding-bottom: 26px;
+  padding-left: 35px;
+
+  background-color: #f9f5f0;
+
+}
+
+.title-popular h2,
+.title-brand h2 {
+
+  margin: 0;
+
+  font-family: "Cuprum", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #32425c;
+
+}
+
+.title-popular a,
+.title-brand a {
+
+  display: inline-block;
+
+  padding-top: 14px;
+  padding-right: 55px;
+  padding-bottom: 14px;
+  padding-left: 55px;
+
+  font-family: "Cuprum", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 10px;
+  text-transform: uppercase;
+
+  border-radius: 5px;
+  background-color: #ee3643;
+
+}
+
+.brand-block {
+
+  margin-top: 20px;
+
+}
+
+.brand-list {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+}
+
+.brand-list li {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  width: 220px;
+  min-height: 145px;
+
+  border: solid 1px #eaeaea;
+
+}
+
+.service-block {
+
+  margin-top: 65px;
+
+}
+
+.service-block h2,
+.service-block h3 {
+
+  margin: 0;
+
+}
 
 .info-block {
 
