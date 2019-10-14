@@ -959,7 +959,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding-top: 35px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 
 }
 
@@ -1099,8 +1099,6 @@ footer {
 
 .breadcrumb-list li {
 
-  /* margin-right: 15px;
-  margin-left: 19px; */
 
 }
 
@@ -1303,7 +1301,7 @@ text-transform: uppercase;
 
 }
 
-.catalog-list {
+/* .catalog-list {
 
   display: flex;
   flex-wrap: wrap;
@@ -1412,7 +1410,205 @@ text-transform: uppercase;
   background-color: #ee3643;
   color: #ffffff;
 
+} */
+
+
+.catalog-items {
+
+  margin: 0 auto;
+  margin-top: 20px;
+
 }
+
+.catalog-items .row {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.catalog-item {
+
+  position: relative;
+  display: inline-block;
+  width: 220px;
+  /* margin-right: 20px; */
+  margin-bottom: 20px;
+
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+
+  border: 1px solid #ccc;
+
+}
+
+.catalog-item:nth-child(3n) {
+
+  margin-right: 0;
+
+}
+
+.catalog-items {
+
+  font-size: 0;
+
+}
+
+.catalog-item {
+
+  font-size: 16px;
+
+}
+
+.catalog-item .flag {
+
+  position: absolute;
+  top: -1px;
+  right: -1px;
+
+  width: 60px;
+  height: 60px;
+
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+
+}
+
+.catalog-item .flag-new {
+  background: url("../img/new-flag.png") no-repeat 0 0;
+}
+
+.catalog-item .actions {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 218px;
+  height: 168px;
+  padding: 40px 0;
+
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+
+}
+
+.catalog-item .actions .buy,
+.catalog-item .actions .bookmark {
+
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+.catalog-item .actions .bookmark {
+
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+
+}
+
+.catalog-item .actions {
+
+  display: none;
+
+}
+
+.catalog-item:hover .actions {
+
+  display: block;
+
+}
+
+.catalog-item .actions {
+
+  display: none;
+
+}
+
+.catalog-item .image {
+
+  width: 218px;
+  height: 168px;
+
+}
+
+.catalog-item .image img {
+
+  max-width: 100%;
+
+}
+
+.catalog-item .title {
+
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+
+}
+
+.catalog-item .discount {
+
+  min-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+  color: #999;
+  text-decoration: line-through;
+
+}
+
+.catalog-item .price {
+
+  position: relative;
+  width: 141px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
+
+}
+
+.catalog-item .price:after {
+
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: -20px;
+
+  width: 0;
+  height: 0;
+
+  border: 20px solid white;
+  border-left-color: #ee3643;
+
+}
+
 
 .pagination {
 
