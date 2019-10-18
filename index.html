@@ -86,26 +86,36 @@
         </div>
         <section class="slider">
           <h3 class="visually-hidden">Слайдер</h3>
+
           <input class="visually-hidden" type="radio" id="slide-1" name="toggle" checked>
           <input class="visually-hidden" type="radio" id="slide-2" name="toggle">
+
           <div class="slider-controls">
-            <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый слайд</label>
-          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй слайд</label>
+            <label class="slider-controls-item slider-controls-item--1" for="slide-1">Первый слайд</label>
+          <label class="slider-controls-item slider-controls-item--2" for="slide-2">Второй слайд</label>
           </div>
+
           <div class="slider-arrow">
             <button type="button" aria-label="Следующии слайд">Вперед</button>
             <button type="button" aria-label="Предыдущий слайд">Назад</button>
           </div>
-          <div class="slide slide-1">
+
+          <ul class="slide-list">
+
+          <li class="slide slider-item">
             <h4>Дрели</h4>
             <p>Соседям на радость!</p>
             <a href="catalog.html" title="Открыть каталог">Открыть каталог</a>
-          </div>
-          <div class="slide slide-2">
+          </li>
+
+          <li class="slide slider-item">
             <h4>Перфораторы</h4>
             <p>Настоящие мужские игрушки</p>
             <a href="catalog.html" title="Открыть каталог">Открыть каталог</a>
-          </div>
+          </li>
+
+          </ul>
+
         </section>
         <div>
           <div class="feature sale-block">
