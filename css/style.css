@@ -803,6 +803,7 @@ main {
 .service-block {
 
   margin-top: 65px;
+  background-color: #f4f7f9;
 
 }
 
@@ -1549,6 +1550,12 @@ text-transform: uppercase;
 .catalog-item {
 
   font-size: 16px;
+
+}
+
+.catalog-item:hover {
+
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 
 }
 
