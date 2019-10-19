@@ -124,12 +124,26 @@ h1 {
 
 }
 
+.logo a:hover {
+
+  background-color: #ca2c37;
+  box-shadow: 0px 5px 0 0 #9a212a;
+
+}
+
+.logo a:active {
+
+  background-color: #ee3643;
+  box-shadow: 0px 5px 0 0 #b52933;
+
+}
+
 .search-form {
 
   display: flex;
   justify-content: flex-start;
 
-  width: 250px;
+  width: 270px;
 
 }
 
@@ -156,7 +170,7 @@ h1 {
   color: #ffffff;
 
   background-color: transparent;
-  background-image: url("../img/icon-search.svg");
+  background-image: url("../img/icon-search.png");
   background-repeat: no-repeat;
   background-position: 10px center;
   background-size: 17px 17px;
@@ -169,9 +183,27 @@ h1 {
 
 }
 
+.search-form [type="search"]:hover {
+
+  background-color: #212a3a;
+  background-image: url("../img/icon-search-hover.png");
+
+}
+
+.search-form [type="search"]:focus {
+
+  background-color: #ffffff;
+  background-image: url("../img/icon-search-focus.png");
+
+  color: #000000;
+
+}
+
 .extra a {
 
   display: inline-block;
+
+  min-width: 150px;
 
   padding-top: 12px;
   padding-bottom: 12px;
@@ -183,25 +215,64 @@ h1 {
   background-color: transparent;
 }
 
+.extra a:hover {
+
+  background-color: #212a3a;
+
+}
+
+.extra a:active {
+
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #161d29;
+
+}
+
 .extra a:nth-child(1) {
 
-  padding-right: 28px;
+  padding-right: 27px;
   padding-left: 44px;
 
-  background-image: url("../img/icon-bookmark.svg");
+  background-image: url("../img/icon-bookmark.png");
   background-repeat: no-repeat;
   background-position: 15px 12px;
 
 }
 
+.extra a:nth-child(1):hover {
+
+  background-image: url("../img/icon-bookmark-hover.png");
+
+}
+
+.extra a:nth-child(1):active {
+
+  background-image: url("../img/icon-bookmark-active.png");
+
+}
+
 .extra a:nth-child(2) {
 
-  padding-right: 31px;
+  padding-right: 25px;
   padding-left: 50px;
 
-  background-image: url("../img/icon-cart.svg");
+  background-image: url("../img/cart-icon.png");
   background-repeat: no-repeat;
   background-position: 15px 12px;
+
+}
+
+.extra a:nth-child(2):hover {
+
+  background-image: url("../img/cart-icon-hover.png");
+  background-color: #212a3a;
+
+}
+
+.extra a:nth-child(2):active {
+
+  background-image: url("../img/cart-icon-active.png");
+  background-color: #161d29;
 
 }
 
@@ -219,6 +290,19 @@ h1 {
   background-color: #63a63e;
 
 }
+
+.extra a:nth-child(3):hover {
+
+  background-color: #5fbb2d;
+
+}
+
+.extra a:nth-child(3):active {
+
+  background-color: #518534;
+
+}
+
 .page-header section {
 
   padding-top: 46px;
