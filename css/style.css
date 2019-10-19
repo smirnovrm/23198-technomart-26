@@ -52,7 +52,7 @@ h1 {
 .btn {
 
   padding-top: 14px;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
 
 }
 
@@ -364,7 +364,6 @@ h1 {
 .login-block {
 
   font-family: "Cuprum", Helvetica, sans-serif;
-  padding-left: 13px;
 
 }
 
@@ -375,6 +374,7 @@ h1 {
 
   margin: 0;
   padding: 0;
+  margin-left: 13px;
 
   list-style: none;
 
@@ -385,10 +385,22 @@ h1 {
   display: inline-block;
 
   font-size: 21px;
-  line-height: 21px;
+  line-height: 16px;
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.login-block .btn:hover {
+
+  color: #ee3643;
+
+}
+
+.login-block .btn:active {
+
+  color: #b2b2b2;
+
 }
 
 .login-block .login-btn {
@@ -396,9 +408,21 @@ h1 {
   padding-right: 27px;
   padding-left: 48px;
 
-  background-image: url("../img/icon-login.svg");
+  background-image: url("../img/icon-login.png");
   background-repeat: no-repeat;
   background-position: 14px center;
+
+}
+
+.login-block .login-btn:hover {
+
+  background-image: url("../img/icon-login-hover.png");
+
+}
+
+.login-block .login-btn:active {
+
+  background-image: url("../img/icon-login.png");
 
 }
 
@@ -411,9 +435,33 @@ h1 {
 
 .login-block .profile-btn {
 
+  width: 100%;
+
   padding-right: 55px;
-  padding-bottom: 11px;
+  /* padding-bottom: 16px; */
   padding-left: 46px;
+
+  background-image: url("../img/icon-user.png"),
+                    url("../img/icon-logout.png");
+  background-repeat: no-repeat,
+                     no-repeat;
+  background-size: 20px 18px,
+                   21px 17px;
+  background-position: left 13px top 13px,
+                       right 13px bottom 14px;
+}
+
+.login-block .profile-btn:hover {
+
+  background-image: url("../img/icon-user-hover.png"),
+                    url("../img/icon-logout-hover.png");
+
+}
+
+.login-block .profile-btn:active {
+
+  background-image: url("../img/icon-user.png"),
+                    url("../img/icon-logout.png");
 
 }
 
