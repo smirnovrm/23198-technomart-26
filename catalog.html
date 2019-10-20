@@ -39,7 +39,7 @@
       </h1>
       <div class="contact-block">
         <div>
-          <span>+7 (812) 555-05-55</span>
+          +7 (812) 555-05-55
         </div>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
@@ -92,10 +92,23 @@
       <aside class="filter-block">
         <form action="https://echo.htmlacademy.ru" method="POST">
           <p>Фильтр:</p>
-          <div>
+          <div class="filter-range">
             <h3>Цена:</h3>
-            <input type="range" name="price-range" id="price-range" min="0" max="35000" value="30000" aria-label="Ползунок выбора ценового диапазона">
-            <output>0</output>-<output>30000</output>
+            <!-- <input type="range" name="price-range" id="price-range" min="0" max="35000" value="30000" aria-label="Ползунок выбора ценового диапазона"> -->
+            <!-- <output>0</output>-<output>30000</output> -->
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 0; width: 80%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <input name="min-price" type="text" value="0"> &mdash;
+                <input name="max-price" type="text" value="30000">
+              </div>
+            </div>
           </div>
           <div class="developer">
             <h3>Производители:</h3>
@@ -103,23 +116,23 @@
               <legend class="visually-hidden">Производители</legend>
               <ul>
                 <li>
-                  <input type="checkbox" name="bosch" id="bosch" aria-label="Bosch" checked>
+                  <input class="visually-hidden" type="checkbox" name="bosch" id="bosch" aria-label="Bosch" checked>
                   <label for="bosch">Bosch</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="interskoll" id="interskoll" aria-label="Интерсколл">
+                  <input class="visually-hidden" type="checkbox" name="interskoll" id="interskoll" aria-label="Интерсколл">
                   <label for="interskoll">Интерсколл</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="makita" id="makita" aria-label="Makita" checked>
+                  <input class="visually-hidden" type="checkbox" name="makita" id="makita" aria-label="Makita" checked>
                   <label for="makita">Makita</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="dewalt" id="dewalt" aria-label="Dewalt">
+                  <input class="visually-hidden" type="checkbox" name="dewalt" id="dewalt" aria-label="Dewalt">
                   <label for="dewalt">Dewalt</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="hitachi" id="hitachi" aria-label="Hitachi">
+                  <input class="visually-hidden" type="checkbox" name="hitachi" id="hitachi" aria-label="Hitachi">
                   <label for="hitachi">Hitachi</label>
                 </li>
               </ul>
@@ -131,11 +144,11 @@
               <legend class="visually-hidden">Питание</legend>
               <ul>
                 <li>
-                  <input type="radio" name="power" id="accum" value="accumulation" aria-label="Аккумуляторные" checked>
+                  <input class="visually-hidden" type="radio" name="power" id="accum" value="accumulation" aria-label="Аккумуляторные" checked>
                   <label for="accum">Аккумуляторные</label>
                 </li>
                 <li>
-                  <input type="radio" name="power" id="network" value="network" aria-label="Сетевые">
+                  <input class="visually-hidden" type="radio" name="power" id="network" value="network" aria-label="Сетевые">
                   <label for="network">Сетевые</label>
                 </li>
               </ul>
