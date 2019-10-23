@@ -76,7 +76,7 @@
           <a href="#" title="Материалы на любой вкус">На любой вкус</a>
         </div>
         <div class="feature tools-block">
-          <h3>Наши предложения</h3>
+          <h3>Инструмент</h3>
           <a href="#" title="Инструмент на все случаи">На все случаи</a>
         </div>
         <div class="feature tech-block">
@@ -194,13 +194,26 @@
         </div>
       </section>
       <section class="service-block">
-        <h2>Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
-        <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <dl>
-          <dt><button type="button" aria-label="Доставка">Доставка</button></dt>
-            <dd>
-              <div class="delivery">
+        <div class="wrapper">
+          <h2>Сервисы</h2>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
+          <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+
+          <div class="service-slider">
+
+            <input class="visually-hidden" type="radio" id="service-1" name="service-toggle" checked>
+            <input class="visually-hidden" type="radio" id="service-2" name="service-toggle">
+            <input class="visually-hidden" type="radio" id="service-3" name="service-toggle">
+
+            <div class="service-controls">
+              <label for="service-1" class="service-control sevice-control--1">Доставка</label>
+              <label for="service-2" class="service-control sevice-control--2">Гарантия</label>
+              <label for="service-3" class="service-control sevice-control--3">Кредит</label>
+            </div>
+
+            <ul class="service-list">
+
+              <li class="service-slide">
                 <h3>Доставка</h3>
                 <p>
                   Мы с удовольствием доставим ваш товар прямо
@@ -208,11 +221,9 @@
                   Ведь мы неплохо заработаем,<br>
                   поднимая его на ваш этаж!
                 </p>
-              </div>
-            </dd>
-          <dt><button type="button" aria-label="Гарантия">Гарантия</button></dt>
-            <dd>
-              <div class="guarantee">
+              </li>
+
+              <li class="service-slide">
                 <h3>Гарантия</h3>
                 <p>
                     Если купленный у нас товар поломается или заискрит,<br>
@@ -221,20 +232,20 @@
                     сгоревший товар на новый.
                 </p>
                 <p>Дом уж восстановите как-нибудь сами.</p>
-              </div>
-            </dd>
-          <dt><button type="button" aria-label="Кредит">Кредит</button></dt>
-            <dd>
-              <div class="credit">
+              </li>
+
+              <li class="service-slide">
                 <h3>Кредит</h3>
                 <p>
                   Залезть в долговую яму стало проще!
                   Кредитные консультанты придут вам на помощь.
                 </p>
                 <a href="#" title="Отправить заявку">Отправить заявку</a>
-              </div>
-            </dd>
-        </dl>
+              </li>
+
+            </ul>
+          </div>
+        </div>
       </section>
       <section class="wrapper company-info-block">
         <div class="info-block">

@@ -840,17 +840,23 @@ main {
 }
 
 .slider-item:nth-child(1) {
+
   background-image: url("../img/slider-image.jpg");
   background-repeat: no-repeat;
+
 }
 
 .slider-item:nth-child(2) {
+
   background-image: url("../img/slide-image.jpg");
   background-repeat: no-repeat;
+
 }
 
 #slide-1:checked ~ .slide-list .slider-item:nth-child(1) {
+
   display: block;
+
 }
 
 #slide-2:checked ~ .slide-list .slider-item:nth-child(2) {
@@ -966,9 +972,153 @@ main {
 .service-block {
 
   margin-top: 65px;
+
+  padding-top: 68px;
+
   background-color: #f4f7f9;
 
 }
+
+.service-block p {
+
+  margin: 0;
+
+}
+
+.service-slider {
+
+  display: flex;
+
+  margin-top: 2px;
+
+}
+
+.service-list {
+
+  flex-grow: 1;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+}
+
+.service-controls {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+
+  width: 240px;
+
+}
+
+.service-controls::before {
+
+  content: "";
+
+  display: block;
+
+  position: absolute;
+
+  width: 10px;
+  height: 279px;
+
+  right: 0;
+
+  background-image: url("../img/shadow.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.service-controls label {
+
+  padding-top: 21px;
+  padding-left: 23px;
+  padding-bottom: 21px;
+
+  font-family: "Cuprum", Helvetica, sans-serif;
+  font-size: 21px;
+  color: #ffffff;
+  line-height: 19px;
+
+  background-color: #32425c;
+
+  box-shadow: 0px 1px 0 0 #293449,
+              inset 0px 1px 0 0 #405069;
+
+  cursor: pointer;
+
+}
+
+#service-1:checked ~ .service-controls .service-control:nth-child(1),
+#service-2:checked ~ .service-controls .service-control:nth-child(2),
+#service-3:checked ~ .service-controls .service-control:nth-child(3) {
+
+  color: #32425c;
+
+  box-shadow: 0px 1px 0 0 #ffffff,
+              inset 0px 1px 0 0 #ffffff;
+  background-color: #ffffff;
+
+}
+
+.service-slide {
+
+  display: none;
+
+  padding-left: 80px;
+
+  min-height: 345px;
+
+  background-position: right bottom;
+
+  padding-top: 63px;
+
+}
+
+.service-slide:nth-child(1) {
+
+  background-image: url("../img/delivery.png");
+  background-repeat: no-repeat;
+
+}
+
+.service-slide:nth-child(2) {
+
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+
+}
+
+.service-slide:nth-child(3) {
+
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+
+}
+
+#service-1:checked ~ .service-list .service-slide:nth-child(1) {
+
+  display: block;
+
+}
+
+#service-2:checked ~ .service-list .service-slide:nth-child(2) {
+
+  display: block;
+
+}
+
+#service-3:checked ~ .service-list .service-slide:nth-child(3) {
+
+  display: block;
+
+}
+
 
 .service-block h2,
 .service-block h3 {
@@ -983,6 +1133,12 @@ main {
 
 }
 
+.service-block h2 {
+
+  margin-bottom: 38px;
+
+}
+
 .service-block h3 {
 
   font-size: 36px;
@@ -992,26 +1148,59 @@ main {
 }
 
 .service-block > p {
-  margin: 0;
+
   line-height: 19px;
+
 }
 
-.delivery p {
+.service-slide:nth-child(1) p {
 
   width: 275px;
 
+  margin-top: 34px;
+
 }
 
-.guarantee p {
+.service-slide:nth-child(2) p {
 
   width: 360px;
-  margin: 0;
 
 }
 
-.credit p {
+.service-slide:nth-child(2) p:first-of-type {
+
+  margin-top: 38px;
+
+}
+
+.service-slide:nth-child(3) p {
 
   width: 280px;
+
+  margin-top: 34px;
+
+}
+
+.service-slide a {
+
+  display: inline-block;
+
+  margin-top: 31px;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 44px;
+  padding-right: 45px;
+
+  border-radius: 5px;
+
+  font-family: "Cuprum", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  background-color: #ff5357;
 
 }
 
