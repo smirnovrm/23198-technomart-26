@@ -264,7 +264,7 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
           <img id="map" src="img/map-small.jpg" width="300" height="158" alt="Карта проезда до офиса. Большая Конюшенная, офис 19">
-          <button href="#" id="open-map" title="Заблудились? Напишите Нам!">Заблудились? Напишите нам!</button>
+          <button href="#" id="open-contact" title="Заблудились? Напишите Нам!">Заблудились? Напишите нам!</button>
         </div>
       </section>
     </main>
@@ -319,20 +319,20 @@
       <button class="popup-close" type="button" aria-label="Закрыть карту проезда" title="Закрыть карту проезда"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
-    <section class="popup contact-popup" id="contanct-modal">
+    <section class="popup contact-popup" id="contact-modal">
       <h2 class="visually-hidden">Контактная форма</h2>
       <form action="https://echo.htmlacademy.ru" method="POST">
         <div>
-          <label for="name-person" aria-label="Ваше имя">Ваше имя:</label>
-          <input type="text" name="name-person" id="name-person" placeholder="Имя Фамилия" aria-placeholder="Имя Фамилия">
-          <label for="email-person" aria-label="Ваш e-mail">Ваш e-mail:</label>
-          <input type="email" name="email-person" id="email-person" placeholder="email@example.com" aria-placeholder="email@example.com">
+          <label for="name-person" aria-label="Ваше имя">Ваше имя:
+          <input type="text" name="name-person" id="name-person" placeholder="Имя Фамилия" aria-placeholder="Имя Фамилия"></label>
+          <label for="email-person" aria-label="Ваш e-mail">Ваш e-mail:
+          <input type="email" name="email-person" id="email-person" placeholder="email@example.com" aria-placeholder="email@example.com"></label>
         </div>
         <label for="mail-text" aria-label="Текст письма">Текст письма:</label>
-        <textarea name="mail-text" id="mail-text" cols="100" rows="20" aria-placeholder="Текст письма в свободной форме">В свободной форме</textarea>
-        <button type="submit" aria-label="Отправить">Отправить</button>
+        <textarea name="mail-text" id="mail-text" cols="100" rows="7" aria-placeholder="Текст письма в свободной форме">В свободной форме</textarea>
+        <button class="send-btn" type="submit" aria-label="Отправить">Отправить</button>
       </form>
-      <button type="button" aria-label="Закрыть контактную форму">Закрыть</button>
+      <button class="popup-close" type="button" title="Закрыть контактную форму" aria-label="Закрыть контактную форму"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
     <script src="js/script.js"></script>

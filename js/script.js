@@ -1,20 +1,37 @@
 var mapModal = document.querySelector("#map-modal")
-var closeMapBtn = document.querySelector(".popup-close")
+var contactModal = document.querySelector("#contact-modal")
 
-var openMapBtn = document.querySelector("#map")
+var closeMapBtn = document.querySelector("#map-modal .popup-close")
+var closeContactBtn = document.querySelector("#contact-modal .popup-close")
 
-openMapBtn.addEventListener("click", function(event){
+var openMap = document.querySelector("#map")
+var openContact = document.querySelector("#open-contact")
 
-  mapModal.classList.add("show");
+openMap.addEventListener("click", function(event){
+
+  mapModal.classList.add("show")
 
 })
-
-
 closeMapBtn.addEventListener("click", function(event){
 
-  mapModal.classList.remove("show");
+  mapModal.classList.remove("show")
 
 })
 
+openContact.addEventListener("click", function(event){
+
+  event.preventDefault
+  contactModal.classList.add("show")
+
+})
+
+closeContactBtn.addEventListener("click", function(event){
+
+  contactModal.classList.remove("show")
+
+})
+
+
+// console.log(openContactBtn)
 // console.log(mapModal);
 // console.log(closeBtn);
