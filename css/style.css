@@ -777,6 +777,8 @@ main {
 
   display: inline-block;
 
+  position: relative;
+
   margin-top: 101px;
   margin-left: 24px;
   margin-bottom: 22px;
@@ -795,9 +797,42 @@ main {
 
 }
 
-.slider button {
+.slider-arrow {
 
-  display: none;
+  display: flex;
+  justify-content: space-between;
+
+  position: absolute;
+
+  top: 114px;
+  left: 0;
+  right: 0;
+}
+
+.slider-arrow button {
+
+  width: 22px;
+  height: 40px;
+
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+
+}
+
+.slider-arrow button:nth-child(1) {
+
+  margin-left: 25px;
+
+  background-image: url("../img/icon-left.svg");
+
+}
+
+.slider-arrow button:nth-child(2) {
+
+  margin-right: 20px;
+
+  background-image: url("../img/icon-right.svg");
 
 }
 
