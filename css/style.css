@@ -2653,6 +2653,133 @@ fill: #000000;
 
 }
 
+.modal-wrap {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100%;
+
+}
+
+.basket-popup {
+
+  top: 379px;
+  left: 50%;
+
+  margin-left: -330px;
+  padding-bottom: 37px;
+
+  width: 620px;
+  height: 282px;
+
+  background-color: #ffffff;
+
+  box-shadow: inset 0 7px 0 0 #ff5358,
+              inset 0 -112px 0 0 #f4f4f4,
+              0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+
+}
+
+.basket-popup p {
+
+  width: 316px;
+
+  position: relative;
+
+  margin: 0 auto;
+  margin-top: 75px;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 27px;
+
+}
+
+.basket-popup p::before {
+
+  content: "";
+
+  display: block;
+
+  position: absolute;
+
+  top: -20px;
+  left: -98px;
+
+  width: 66px;
+  height: 66px;
+
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+
+}
+
+.basket-popup ul {
+
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  align-self: center;
+
+
+}
+
+.basket-popup li {
+
+  width: 220px;
+
+}
+
+.basket-popup li:first-of-type {
+
+  margin-right: 20px;
+
+}
+
+.basket-popup .sale-btn,
+.basket-popup .continue-btn {
+
+
+  display: inline-block;
+
+  width: 100%;
+
+  padding-top: 14px;
+  padding-bottom: 12px;
+
+  border: 0;
+
+  border-radius: 5px;
+
+  color: #ffffff;
+
+  font-family: "Cuprum", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 16px;
+
+  background-color: #ee3643;
+  cursor: pointer;
+
+}
+
+.basket-popup .continue-btn {
+
+  color: #000000;
+  background-color: #ffffff;
+
+}
+
+
 .show {
 
   display: block;

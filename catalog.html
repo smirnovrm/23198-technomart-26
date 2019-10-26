@@ -368,17 +368,20 @@
         </div>
     </section>
   </footer>
-  <section class="basket-popup">
-    <p>Товар добавлен в корзину!</p>
-    <button type="button" aria-label="Закрыть окно">Закрыть</button>
-    <ul>
-      <li>
-        <a href="#" title="Оформить заказ">Оформить заказ</a>
-      </li>
-      <li>
-        <button type="button" aria-label="Продолжить покупки">Продолжить покупки</button>
-      </li>
-    </ul>
+  <section class="popup basket-popup" id="basket-modal">
+    <div class="modal-wrap">
+        <p>Товар добавлен в корзину!</p>
+        <button class="popup-close" type="button" aria-label="Закрыть окно"><span class="visually-hidden">Закрыть</span></button>
+        <ul>
+          <li>
+            <a class="btn sale-btn" id="buy-btn" href="#" title="Оформить заказ">Оформить заказ</a>
+          </li>
+          <li>
+            <button class="btn continue-btn" id="continue-btn" type="button" aria-label="Продолжить покупки">Продолжить покупки</button>
+          </li>
+        </ul>
+    </div>
   </section>
+  <script src="js/script.js"></script>
 </body>
 </html>
