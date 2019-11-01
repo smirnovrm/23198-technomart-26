@@ -26,27 +26,42 @@ var continueShopingBtn = document.querySelector("#continue-btn")
 var favoriteCnt = 0;
 var basketCnt = 0;
 
-function openModal(modal, openBtn, closeBtn){
-  try {
-    openBtn.addEventListener("click", function(event){
+try {
+  openMap.addEventListener("click", function(event){
 
-      event.preventDefault()
-      modal.classList.add("show")
+    event.preventDefault()
+    mapModal.classList.add("show")
 
-    })
-    closeBtn.addEventListener("click", function(event){
+  })
+  closeMapBtn.addEventListener("click", function(event){
 
-      modal.classList.remove("show")
+    event.preventDefault()
+    mapModal.classList.remove("show")
 
-    })
-  } catch (err) {
-    console.log("На странице отсутствует модальное окно")
-  }
+  })
+} catch (err) {
+  console.log("На странице отсутствует модальное окно")
 }
 
-openModal(mapModal, openMap, closeMapBtn)
 
-openModal(contactModal, openContact, closeContactBtn)
+
+try {
+  openContact.addEventListener("click", function(event){
+
+    event.preventDefault()
+    contactModal.classList.add("show")
+    personName.focus()
+
+  })
+  closeContactBtn.addEventListener("click", function(event){
+
+    event.preventDefault()
+    contactModal.classList.remove("show")
+
+  })
+} catch (err) {
+  console.log("На странице отсутствует модальное окно")
+}
 
 loginBtn.addEventListener("click", function(event){
 
@@ -97,3 +112,96 @@ try {
 } catch (err) {
   console.log("Не могу закрыть окно")
 }
+
+try {
+
+  var form = contactModal.querySelector("form")
+
+  var personName = contactModal.querySelector("#name-person")
+  var email = contactModal.querySelector("#email-person")
+  var msg = contactModal.querySelector("#mail-text")
+
+  if(localStorage.getItem("personName") && localStorage.getItem("personName") !== "" ){
+    personName.value = localStorage.getItem("personName")
+  }
+
+  if(localStorage.getItem("email") && localStorage.getItem("email") !== "" ){
+    email.value = localStorage.getItem("email")
+  }
+
+  if(localStorage.getItem("msg") && (localStorage.getItem("msg") !== "" || localStorage.getItem("msg") === "В свободной форме")){
+    msg.value = localStorage.getItem("msg")
+  }
+
+  form.addEventListener("submit", function(event){
+
+    if (!personName.value) {
+      event.preventDefault()
+      personName.classList.add("error")
+      personName.placeholder = "Введите ваше имя"
+    }else {
+      personName.classList.remove("error")
+      try {
+        localStorage.setItem("personName", personName.value)
+      } catch (err) {
+        console.log("Ошибка записи в локальное хранилище")
+      }
+    }
+
+    if (!email.value) {
+      event.preventDefault()
+      email.classList.add("error")
+      email.placeholder = "Введите вашу почту"
+    }else {
+      email.classList.remove("error")
+      try {
+        localStorage.setItem("email", email.value)
+      } catch (err) {
+        console.log("Ошибка записи в локальное хранилище")
+      }
+    }
+
+    if (!msg.value || msg.value === "В свободной форме") {
+      event.preventDefault()
+      msg.value = ""
+      msg.classList.add("error")
+    }else {
+      msg.classList.remove("error")
+      try {
+        localStorage.setItem("msg", msg.value)
+      } catch (err) {
+        console.log("Ошибка записи в локальное хранилище")
+      }
+    }
+
+  })
+} catch (error) {
+  console.log("На странице отсутствует форма")
+}
+
+
+window.addEventListener("keydown", function(event){
+  if(event.keyCode === 27){
+    try {
+      if(mapModal.classList.contains("show")){
+        mapModal.classList.remove("show")
+      }
+    } catch (error) {
+      console.log("Нет модального окна")
+    }
+    try {
+      if(contactModal.classList.contains("show")){
+        contactModal.classList.remove("show")
+      }
+    } catch (error) {
+      console.log("Нет модального окна")
+    }
+    try {
+      if(basketModal.classList.contains("show")){
+        basketModal.classList.remove("show")
+      }
+    } catch (error) {
+      console.log("Нет модального окна")
+    }
+  }
+})

@@ -3189,6 +3189,21 @@ fill: #000000;
 
 }
 
+.contact-popup input.error,
+.contact-popup textarea.error {
+
+  background-color: #ee3643;
+  border-color: #ee3643;
+  color: #ffffff;
+
+}
+
+.contact-popup input.error::placeholder {
+
+  color: #ffffff;
+
+}
+
 .contact-popup input {
 
   width: 100%;
@@ -3379,10 +3394,19 @@ fill: #000000;
 
 }
 
+@keyframes bounce {
+  0% { transform: translateY(-2000px); }
+  70% { transform: translateY(30px); }
+  90% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
 
 .show {
 
   display: block;
+
+  animation-name: bounce;
+  animation-duration: 2.6s;
 
 }
 
