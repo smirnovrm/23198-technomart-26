@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -44,11 +44,12 @@
         </div>
         <div class="login-block">
           <ul>
-            <li><a class="btn login-btn" href="" title="Войти">Войти</a></li>
-            <li><a class="btn registration-btn" href="" title="Регистрация">Регистрация</a></li>
+            <li><a class="btn login-btn" href="login.html" title="Войти">Войти</a></li>
+            <li><a class="btn registration-btn" href="registration.html" title="Регистрация">Регистрация</a></li>
           </ul>
-          <div class="visually-hidden">
-            <a class="btn profile-btn" href="" title="Равшан Джамшутович">Равшан Джамшутович</a>
+          <div class="profile-bar visually-hidden">
+              <a class="btn profile-btn" href="profile.html" title="Равшан Джамшутович">Равшан Джамшутович</a>
+              <a class="btn logout-btn" href="logout.html" title="Выход"><span class="visually-hidden">Выход</span></a>
           </div>
           <ul class="additional visually-hidden">
             <li><a href="#" title="Мои заказы">Мои заказы</a></li>
@@ -134,44 +135,53 @@
             <div class="catalog-item">
               <div class="flag flag-new">новинка</div>
               <div class="actions">
-                <a href="#" class="buy">Купить</a>
-                <a href="#" class="bookmark">В закладки</a>
+                <button type="button" class="buy">Купить</button>
+                <button type="button" class="bookmark">В закладки</button>
+                <!-- <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a> -->
               </div>
               <div class="image"><img width="218" height="168" src="img/item-image-1.jpg" alt="Перфоратор BOSCH BFG 3000"></div>
-              <div class="title">Перфоратор BOSCH BFG 3000</div>
-              <div class="discount">22 500 Р.</div>
-              <div class="price">15 500 Р.</div>
+              <div class="title">Перфоратор BOSCH BFG 9000</div>
+              <div class="discount">32 500 р.</div>
+              <div class="price">25 500 р.</div>
             </div>
             <div class="catalog-item">
               <div class="actions">
-                <a href="#" class="buy">Купить</a>
-                <a href="#" class="bookmark">В закладки</a>
+                <button type="button" class="buy">Купить</button>
+                <button type="button" class="bookmark">В закладки</button>
+                <!-- <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a> -->
               </div>
               <div class="image"><img width="218" height="168" src="img/item-image-2.jpg" alt="Перфоратор BOSCH BFG 3000"></div>
               <div class="title">Перфоратор BOSCH BFG 3000</div>
-              <div class="discount"></div>
-              <div class="price">15 500 Р.</div>
+              <div class="discount">22 500 р.</div>
+              <div class="price">15 500 р.</div>
             </div>
             <div class="catalog-item">
               <div class="flag flag-new">новинка</div>
               <div class="actions">
-                <a href="#" class="buy">Купить</a>
-                <a href="#" class="bookmark">В закладки</a>
+                <button type="button" class="buy">Купить</button>
+                <button type="button" class="bookmark">В закладки</button>
+                <!-- <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a> -->
               </div>
               <div class="image"><img width="218" height="168" src="img/item-image-3.jpg" alt="Перфоратор BOSCH BFG 3000"></div>
-              <div class="title">Перфоратор BOSCH BFG 3000</div>
-              <div class="discount">22 500 Р.</div>
-              <div class="price">15 500 Р.</div>
+              <div class="title">Перфоратор BOSCH BFG 6000</div>
+              <div class="discount">30 500 р.</div>
+              <div class="price">25 500 р.</div>
             </div>
             <div class="catalog-item">
+              <div class="flag flag-new">новинка</div>
               <div class="actions">
-                <a href="#" class="buy">Купить</a>
-                <a href="#" class="bookmark">В закладки</a>
+                <button type="button" class="buy">Купить</button>
+                <button type="button" class="bookmark">В закладки</button>
+                <!-- <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a> -->
               </div>
-              <div class="image"><img width="218" height="168" src="img/item-image-1.jpg" alt="Перфоратор BOSCH BFG 3000"></div>
-              <div class="title">Перфоратор BOSCH BFG 3000</div>
-              <div class="discount">22 500 Р.</div>
-              <div class="price">15 500 Р.</div>
+              <div class="image"><img width="218" height="168" src="img/item-image-2.jpg" alt="Перфоратор BOSCH BFG 3000"></div>
+              <div class="title">Перфоратор BOSCH BFG 2000</div>
+              <div class="discount"></div>
+              <div class="price">12 500 Р.</div>
             </div>
           </div>
         </div>
@@ -263,7 +273,7 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
           <img id="map" src="img/map-small.jpg" width="300" height="158" alt="Карта проезда до офиса. Большая Конюшенная, офис 19">
-          <button href="#" id="open-contact" title="Заблудились? Напишите Нам!">Заблудились? Напишите нам!</button>
+          <button id="open-contact" title="Заблудились? Напишите Нам!">Заблудились? Напишите нам!</button>
         </div>
       </section>
     </main>
@@ -314,7 +324,7 @@
     <section class="popup map-popup" id="map-modal">
       <h2 class="visually-hidden">Карта проезда</h2>
       <!-- <img src="img/map.png" width="940" height="446" alt="Карта проезда до магазина"> -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6295516218242!2d30.319178002327465!3d59.93828899002264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2skz!4v1571913672414!5m2!1sru!2skz" width="940" height="446" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6295516218242!2d30.319178002327465!3d59.93828899002264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2skz!4v1571913672414!5m2!1sru!2skz" width="940" height="446" allowfullscreen=""></iframe>
       <button class="popup-close" type="button" aria-label="Закрыть карту проезда" title="Закрыть карту проезда"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
@@ -323,15 +333,31 @@
       <form action="https://echo.htmlacademy.ru" method="POST">
         <div>
           <label for="name-person" aria-label="Ваше имя">Ваше имя:
-          <input type="text" name="name-person" id="name-person" placeholder="Имя Фамилия" aria-placeholder="Имя Фамилия"></label>
+          <input type="text" name="name-person" id="name-person" role="textbox" placeholder="Имя Фамилия" aria-placeholder="Имя Фамилия"></label>
           <label for="email-person" aria-label="Ваш e-mail">Ваш e-mail:
-          <input type="email" name="email-person" id="email-person" placeholder="email@example.com" aria-placeholder="email@example.com"></label>
+          <input type="email" name="email-person" id="email-person" role="textbox" placeholder="email@example.com" aria-placeholder="email@example.com"></label>
         </div>
         <label for="mail-text" aria-label="Текст письма">Текст письма:</label>
-        <textarea name="mail-text" id="mail-text" cols="100" rows="7" aria-placeholder="Текст письма в свободной форме">В свободной форме</textarea>
+        <textarea name="mail-text" id="mail-text" cols="100" rows="7" role="textbox" aria-placeholder="Текст письма в свободной форме">В свободной форме</textarea>
         <button class="send-btn" type="submit" aria-label="Отправить">Отправить</button>
       </form>
       <button class="popup-close" type="button" title="Закрыть контактную форму" aria-label="Закрыть контактную форму"><span class="visually-hidden">Закрыть</span></button>
+    </section>
+
+    <section class="popup basket-popup" id="basket-modal">
+      <h2 class="visually-hidden">Товар в корзине</h2>
+      <div class="modal-wrap">
+        <p>Товар добавлен в корзину!</p>
+        <button class="popup-close" type="button" aria-label="Закрыть окно"><span class="visually-hidden">Закрыть</span></button>
+        <ul>
+          <li>
+            <a class="btn sale-btn" id="buy-btn" href="basket.html" title="Оформить заказ">Оформить заказ</a>
+          </li>
+          <li>
+            <button class="btn continue-btn" id="continue-btn" type="button" aria-label="Продолжить покупки">Продолжить покупки</button>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <script src="js/script.js"></script>
