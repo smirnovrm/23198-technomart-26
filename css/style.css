@@ -53,6 +53,12 @@ h1 {
 
 }
 
+body img {
+
+  max-width: 100%;
+
+}
+
 .btn {
 
   padding-top: 14px;
@@ -131,7 +137,13 @@ h1 {
 
   vertical-align: top;
 
+  max-width: 220px;
+  max-height: 42px;
+
+  text-align: center;
+
   background-color: #ee3643;
+
   box-shadow: 0px 5px 0 0 #b52933;
 
 }
@@ -627,31 +639,31 @@ nav a {
 
 }
 
-nav li:nth-of-type(2) > a {
+.menu-item:nth-child(2) > a {
 
   text-indent: 1px;
 
 }
 
-nav li:nth-of-type(3) > a {
+.menu-item:nth-child(3) > a {
 
   text-indent: -4px;
 
 }
 
-nav li:nth-of-type(4) > a {
+.menu-item:nth-child(4) > a {
 
   text-indent: -2px;
 
 }
 
-nav li:nth-of-type(5) > a {
+.menu-item:nth-child(5) > a {
 
   text-indent: -3px;
 
 }
 
-nav li:nth-of-type(7) > a {
+.menu-item:nth-child(6) > a {
 
   text-indent: -1px;
 
@@ -695,13 +707,17 @@ main {
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
+  justify-content: flex-start;
+
 
 }
 
 .feature {
 
   width: 300px;
+
+  margin-left: 20px;
 
   position: relative;
 
@@ -773,6 +789,8 @@ main {
 }
 
 .material-block {
+
+  margin-left: 0;
 
   background-color: #ffbf47;
   background-image: url("../img/icon-1.svg");
@@ -1171,52 +1189,52 @@ main {
   align-items: center;
 
 }
-.brand-list img {
+.brand-item img {
 
   margin-top: -3px;
 
 }
 
-.brand-list li:nth-of-type(2) img {
+.brand-item:nth-child(2) img {
 
   margin-top: -5px;
   margin-left: -1px;
 
 }
 
-.brand-list li:nth-of-type(3) img {
+.brand-item:nth-child(3) img {
 
   margin-top: -6px;
 
 }
 
-.brand-list li:nth-of-type(4) img {
+.brand-item:nth-child(4) img {
 
   margin-top: -16px;
   margin-left: -2px;
 
 }
-.brand-list li:nth-of-type(5) img {
+.brand-item:nth-child(5) img {
 
   margin-top: 1px;
   margin-left: 5px;
 
 }
 
-.brand-list li:nth-of-type(6) img {
+.brand-item:nth-child(6) img {
 
   margin-left: -3px;
 
 }
 
-.brand-list li:nth-of-type(7) img {
+.brand-item:nth-child(7) img {
 
   margin-top: -3px;
   margin-left: 1px;
 
 }
 
-.brand-list li:nth-of-type(8) img {
+.brand-item:nth-child(8) img {
 
   margin-top: -8px;
   margin-left: 4px;
@@ -1779,12 +1797,17 @@ footer {
 
 .footer-logo a {
 
+  display: inline-block;
+
+  vertical-align: top;
+
   padding-top: 20px;
   padding-right: 41px;
-  padding-bottom: 12px;
+  padding-bottom: 20px;
   padding-left: 41px;
 
-  max-height: 68px;
+  max-width: 220px;
+  max-height: 63px;
 
 }
 
@@ -2386,7 +2409,7 @@ li.first-page a {
 
 }
 
-.developer li:nth-of-type(1) svg {
+.developer li:nth-of-type(1) {
 
   margin-top: 2px;
 
@@ -2521,7 +2544,7 @@ input[type="radio"]:checked + label .radio-on {
 
   padding-top: 10px;
   padding-right: 17px;
-  padding-bottom: 9px;
+  padding-bottom: 10px;
   padding-left: 19px;
 
   line-height: 18px;
@@ -2542,8 +2565,6 @@ input[type="radio"]:checked + label .radio-on {
 
 .sorting-block ul {
 
-  width: 444px;
-
   display: flex;
   justify-content: space-between;
 
@@ -2554,13 +2575,25 @@ input[type="radio"]:checked + label .radio-on {
 
 }
 
-.sorting-block li:nth-child(2) {
+.sorting-block .sorting-type {
+
+  width: 444px;
+
+}
+
+.sorting-type li:nth-child(1) {
+
+  padding-left: 92px;
+
+}
+
+.sorting-type li:nth-child(2) {
 
   padding-left: 27px;
 
 }
 
-.sorting-block li:nth-child(3) {
+.sorting-type li:nth-child(3) {
 
   padding-left: 22px;
 
@@ -2710,6 +2743,7 @@ fill: #000000;
 .feature .flag {
 
   top: 0;
+  right: 0;
 
 }
 
@@ -2756,7 +2790,7 @@ fill: #000000;
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Helvetica, sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -3305,7 +3339,7 @@ fill: #000000;
   margin-left: 179px;
   margin-top: 73px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Helvetica, sans-serif;
   font-size: 30px;
   letter-spacing: 0.1px;
   line-height: 27px;
