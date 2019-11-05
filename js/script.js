@@ -12,14 +12,14 @@ var loginBtn = document.querySelector(".login-btn")
 var logoutBtn = document.querySelector(".logout-btn")
 
 var mapModal = document.querySelector("#map-modal")
-var contactModal = document.querySelector("#contact-modal")
+// var contactModal = document.querySelector("#contact-modal")
 var basketModal = document.querySelector("#basket-modal")
 
 var openMap = document.querySelector("#map")
-var openContact = document.querySelector("#open-contact")
+// var openContact = document.querySelector("#open-contact")
 
 var closeMapBtn = document.querySelector("#map-modal .popup-close")
-var closeContactBtn = document.querySelector("#contact-modal .popup-close")
+// var closeContactBtn = document.querySelector("#contact-modal .popup-close")
 var closeBasketBtn = document.querySelector("#basket-modal .modal-wrap .popup-close")
 var continueShopingBtn = document.querySelector("#continue-btn")
 
@@ -113,95 +113,117 @@ try {
   console.log("Не могу закрыть окно")
 }
 
-try {
 
-  var form = contactModal.querySelector("form")
 
-  var personName = contactModal.querySelector("#name-person")
-  var email = contactModal.querySelector("#email-person")
-  var msg = contactModal.querySelector("#mail-text")
 
-  if(localStorage.getItem("personName") && localStorage.getItem("personName") !== "" ){
-    personName.value = localStorage.getItem("personName")
+
+
+  try {
+
+    var link = document.querySelector("#open-contact")
+
+    var popup = document.querySelector("#contact-modal")
+    var close = popup.querySelector("#contact-modal .popup-close")
+
+    var form = popup.querySelector("form")
+
+    var personName = popup.querySelector("#name-person")
+    var email = popup.querySelector("#email-person")
+    var msg = popup.querySelector("#mail-text")
+
+  } catch (error) {
+    console.log("");
   }
 
-  if(localStorage.getItem("email") && localStorage.getItem("email") !== "" ){
-    email.value = localStorage.getItem("email")
+
+  var isStorageSupport = true;
+  var storage = "";
+
+  try {
+    storagePerson = localStorage.getItem("personName");
+  } catch (err) {
+    isStorageSupport = false;
   }
 
-  if(localStorage.getItem("msg") && (localStorage.getItem("msg") !== "" || localStorage.getItem("msg") === "В свободной форме")){
-    msg.value = localStorage.getItem("msg")
+  try {
+    storageEmail = localStorage.getItem("email");
+  } catch (err) {
+    isStorageSupport = false;
   }
 
-  form.addEventListener("submit", function(event){
+  try {
+    storageText = localStorage.getItem("msg");
+  } catch (err) {
+    isStorageSupport = false;
+  }
 
-    if (!personName.value) {
-      event.preventDefault()
-      personName.classList.add("error")
-      personName.placeholder = "Введите ваше имя"
-    }else {
-      personName.classList.remove("error")
+  try {
+
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      popup.classList.add("show");
+
+      if (storagePerson && storageEmail) {
+        personName.value = storagePerson;
+        email.value = storageEmail;
+        msg.focus();
+      }
+      else if (storagePerson) {
+        personName.value = storagePerson;
+        email.focus();
+      } else {
+        personName.focus();
+      }
+    });
+
+    close.addEventListener("click", function (event) {
+      event.preventDefault();
+      popup.classList.remove("show");
+      popup.classList.remove("modal-error");
+    });
+
+    form.addEventListener("submit", function (event) {
+      if (!personName.value || !email.value || !msg.value) {
+        event.preventDefault();
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal-error");
+      } else {
+        if (isStorageSupport) {
+          localStorage.setItem("personName", personName.value);
+          localStorage.setItem("email", email.value);
+          localStorage.setItem("msg", msg.value);
+        }
+      }
+    });
+
+    window.addEventListener("keydown", function (event) {
+      if (event.keyCode === 27) {
+        event.preventDefault();
+        if (popup.classList.contains("show")) {
+          popup.classList.remove("show");
+          popup.classList.remove("modal-error");
+        }
+      }
+
       try {
-        localStorage.setItem("personName", personName.value)
-      } catch (err) {
-        console.log("Ошибка записи в локальное хранилище")
+        if(mapModal.classList.contains("show")){
+          mapModal.classList.remove("show")
+        }
+      } catch (error) {
+        console.log("Нет модального окна")
       }
-    }
 
-    if (!email.value) {
-      event.preventDefault()
-      email.classList.add("error")
-      email.placeholder = "Введите вашу почту"
-    }else {
-      email.classList.remove("error")
       try {
-        localStorage.setItem("email", email.value)
-      } catch (err) {
-        console.log("Ошибка записи в локальное хранилище")
+        if(basketModal.classList.contains("show")){
+          basketModal.classList.remove("show")
+        }
+      } catch (error) {
+        console.log("Нет модального окна")
       }
-    }
+    })
 
-    if (!msg.value || msg.value === "В свободной форме") {
-      event.preventDefault()
-      msg.value = ""
-      msg.classList.add("error")
-    }else {
-      msg.classList.remove("error")
-      try {
-        localStorage.setItem("msg", msg.value)
-      } catch (err) {
-        console.log("Ошибка записи в локальное хранилище")
-      }
-    }
-
-  })
-} catch (error) {
-  console.log("На странице отсутствует форма")
-}
-
-
-window.addEventListener("keydown", function(event){
-  if(event.keyCode === 27){
-    try {
-      if(mapModal.classList.contains("show")){
-        mapModal.classList.remove("show")
-      }
-    } catch (error) {
-      console.log("Нет модального окна")
-    }
-    try {
-      if(contactModal.classList.contains("show")){
-        contactModal.classList.remove("show")
-      }
-    } catch (error) {
-      console.log("Нет модального окна")
-    }
-    try {
-      if(basketModal.classList.contains("show")){
-        basketModal.classList.remove("show")
-      }
-    } catch (error) {
-      console.log("Нет модального окна")
-    }
+  } catch (error) {
+    console.log("")
   }
-})
+
