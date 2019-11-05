@@ -2904,8 +2904,7 @@ fill: #000000;
 }
 
 .catalog-item:hover .actions,
-.catalog-item:focus .actions,
-.catalog-item:focus-within .actions {
+.catalog-item:focus .actions {
 
   display: block;
 
